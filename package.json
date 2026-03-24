@@ -1,11 +1,17 @@
 {
-  "name": "classnames-light",
-  "version": "1.0.0",
-  "description": "Simplyfied classnames with only classes and conditional classes",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "classnames-light",
+    "version": "1.0.0",
+    "description": "Simplified classnames with only classes and conditional classes",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "clean": "rm -rf dist"
+    },
+    "author": "MolodzeffDanila",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^25.5.0",
+        "typescript": "^6.0.2"
+    }
 }
