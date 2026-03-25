@@ -1,21 +1,27 @@
 import { ClassnamesObjType, ClassnamesType } from "./types";
 
-//const buildStrFromClassObject = (obj: ClassnamesObjType) => obj.reduce()
+const buildStrFromClassObject = (obj: ClassnamesObjType) => {
+  let classString = "";
 
-export const classnames : ClassnamesType = (...props) => {
-    let classString = '';
+  Object.entries(obj).forEach(([key, value]) => {
+    if (value) {
+      classString += `${key} `;
+    }
+  });
 
-    props.forEach((item) => {
-        if(typeof item === "string"){
-            classString += `${item} `;
-        }else if(){
+  return classString;
+};
 
-        }
-    })
+export const classnames: ClassnamesType = (...props) => {
+  let classString = "";
 
-    return classString;
-}
+  props.forEach((item) => {
+    if (typeof item === "string") {
+      classString += `${item} `;
+    } else {
+      classString += buildStrFromClassObject(item);
+    }
+  });
 
-console.log(classnames("QWE", "WWDQ", "type tt", {
-    "key": true
-}))
+  return classString;
+};
