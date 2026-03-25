@@ -12,7 +12,7 @@ const buildStrFromClassObject = (obj: ClassnamesObjType) => {
   return classString;
 };
 
-export const classnames: ClassnamesType = (...props) => {
+export const classnamesLight: ClassnamesType = (...props) => {
   let classString = "";
 
   props.forEach((item) => {
