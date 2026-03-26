@@ -1,32 +1,32 @@
 {
-    "name": "classnames-light",
-    "version": "1.1.0",
-    "description": "Simplified classnames with only classes and conditional classes",
-    "main": "dist/index.js",
-    "module": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
-    "exports": {
-        ".": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.js",
-            "types": "./dist/index.d.ts"
-        }
-    },
-    "scripts": {
-        "build": "rollup -c",
-        "prepublishOnly": "npm run build"
-    },
-    "author": "MolodzeffDanila",
-    "license": "ISC",
-    "devDependencies": {
-        "@rollup/plugin-typescript": "^12.3.0",
-        "@types/node": "^25.5.0",
-        "rollup": "^4.60.0",
-        "ts-node": "^10.9.2",
-        "tslib": "^2.8.1",
-        "typescript": "^6.0.2"
+  "name": "classnames-light",
+  "version": "1.0.2",
+  "description": "Simplified classnames with only classes and conditional classes",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "MolodzeffDanila",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/node": "^25.5.0",
+    "rollup": "^4.60.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": "^6.0.2"
+  }
 }
